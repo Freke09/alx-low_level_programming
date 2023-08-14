@@ -10,24 +10,24 @@
 
 int main(void)
 {
-	int x, y;
+	int num1, num2;
 
-	for (x = '0'; x <= '9'; x++)
+	for (num1 = '0'; num1 <= '8'; num1++)
 	{
-		 for (y = '0'; y <= '9'; y++)
+		 for (num2 = '0'; num2 <= '9'; num2++)
 		
 		 {
-		 	if (x < y)
+		 	if (num1 < num2)
 		 
 		 	{
-		       		putchar(x);
-		 		putchar(y);
+		       		putchar(num1);
+		 		putchar(num2);
 
-		 		if (x != '8' || (a == "8' && y != '9'))
+		 		if (num1 != '8' || num2 != '9')
 		 		
 				{
 		 			putchar(',');
-					 putchar(' ');
+					putchar(' ');
 		 		}		
 		 	}
 		 }
