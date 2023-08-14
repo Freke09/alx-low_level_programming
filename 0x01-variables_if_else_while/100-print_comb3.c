@@ -17,13 +17,13 @@ int main(void)
 		 for (y = '0'; y <= '9'; y++)
 		
 		 {
-		 	if (a < b)
+		 	if (x < y)
 		 
 		 	{
 		       		putchar(x);
 		 		putchar(y);
 
-		 		if (a != '8' || (a == "8' && b != '9'))
+		 		if (x != '8' || (a == "8' && y != '9'))
 		 		
 				{
 		 			putchar(',');
