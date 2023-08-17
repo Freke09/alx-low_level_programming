@@ -2,6 +2,7 @@
 
 /**
 * _islower -check if a char c is lowercase
+* @c: thw character for checking
 *
 * Return: 1 if char c is lowercase and 0 if otherwise
 */
