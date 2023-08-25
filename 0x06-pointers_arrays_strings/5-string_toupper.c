@@ -7,7 +7,7 @@
 * Return: Pointer to the string
 */
 
-char string_toupper(char *a)
+char *string_toupper(char *a)
 {
 	int i;
 
@@ -16,8 +16,8 @@ char string_toupper(char *a)
 	while (*(a + i))
 	{
 		if (*(a + i) >= 'a' && *(a + i) <= 'z')
-			*(a + i) -= 'a' - 'A';
-			i++;
+		*(a + i) -= 'a' - 'A';
+	i++;
 	}
 
 	return (a);
