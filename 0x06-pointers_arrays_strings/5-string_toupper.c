@@ -1,5 +1,4 @@
 #include "main.h"
-#include <ctype.h>
 
 /**
 * string_toupper - A function that changes all lowercase of a string
@@ -10,15 +9,20 @@
 
 char string_toupper(char *a)
 {
-	char *i = a;
+	int i;
 
-	while (*i)
+	i = 0;
+
+	while (*(s + i))
 	{
-		*i = toupper(*i);
-		*i++;
+		if (*(a + i) >= 'a' && *(a + i) <= 'z')
+		{
+			*(a + i) -= 'a' - 'A';
+			i++;
+		}
 	}
 
 	return (a);
 
-}
 
+}
