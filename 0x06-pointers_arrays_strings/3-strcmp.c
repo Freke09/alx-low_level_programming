@@ -21,8 +21,5 @@ int _strcmp(char *s1, char *s2)
 	}
 
 	if (a == 1)
-	{
-		_putchar('0');
-	}
 	return (a);
 }
