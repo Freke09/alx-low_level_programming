@@ -13,19 +13,22 @@ char *_strcat(char *dest, char *src)
 {
 	int l1, l2, i, j;
 
-	l1 = strlen(*dest);
-	l2 = strlen(*src);
+	l1 = strlen(dest);
+	l2 = strlen(src);
 
 	for (i = 0; i <= l2; i++)
 	{
-		*dest[l1 + 1] = *src[i];
+		dest[l1 + 1] = src[i];
 	}
+	dest[l1 + l2] = '\0';
 
-	for (i = 0;  <= *dest[i]; i++)
+	for (i = 0;  <= l1 + l2; i++)
 	{
-		_putchar(*dest);
+		_putchar(dest[i]);
 	}
 
 	_putchar('\n');
+
+	return (dest);
 
 }
