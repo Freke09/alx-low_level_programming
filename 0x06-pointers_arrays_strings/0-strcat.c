@@ -11,24 +11,21 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int l1, l2, i;
+	char *a = dest;
 
-	l1 = strlen(dest);
-	l2 = strlen(src);
-
-	for (i = 0; i <= l2; i++)
+	while (*dest != '\0')
 	{
-		dest[l1 + i] = src[i];
-	}
-	dest[l1 + l2] = '\0';
-
-	for (i = 0;  <= l1 + l2; i++)
-	{
-		_putchar(dest[i]);
+		dest++;
 	}
 
-	_putchar('\n');
+	while (*src != '\n')
+	{
+		*dest = *src;
+		dest++;
+		src++;
+	}
 
-	return (dest);
+	*dest = '\0';
+	return (a);
 
 }
