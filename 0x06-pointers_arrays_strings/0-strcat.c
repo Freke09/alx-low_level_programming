@@ -4,9 +4,9 @@
 
 /**
 * _strcat - a function that concatenates two strings
-* @dest: destination string
-* @src: source string
-* Return: pointer to the string
+* @dest: destination string array
+* @src: source string array
+* Return: Character
 */
 
 char *_strcat(char *dest, char *src)
