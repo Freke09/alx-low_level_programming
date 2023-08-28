@@ -10,13 +10,13 @@
 
 char *_memset(char *s, char b, unsigned int n)
 {
-	int i; /* Subscript to the array s */
+	unsigned int a = 0;
 
-	if (n == 0)
-		return (s);
+	while (a < n)
+	{
+		s[a] = b;
+		s++;
+	}
 
-	*s = 'b';
-
-	return (_memset(s + 1, b, n - 1));
-
+	return (s);
 }
