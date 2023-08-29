@@ -6,24 +6,21 @@
 * _strchr - A function that locates a character in a string
 * @s: The string array
 * @c: The character to be located
-* Return: Pointer
+* Return: NULL
 */
 
 char *_strchr(char *s, char c)
 {
-	char i;
-
-	for (i = 'a'; i <= 'z'; i++)
+	while (*s)
 	{
-		if (i == 'c')
-		{
-			return (s);
-		}
-
+		if (*s != c)
+			s++;
 		else
-		{
-			return (NULL);
-		}
+			return (s);
 	}
 
-{
+	if (c == '\0')
+		return (s);
+	return (NULL);
+
+}
